@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-
+import java.uti.*;
 
 @Entity 
 public class StudentEntity{
@@ -33,6 +33,17 @@ public class StudentEntity{
      public void setPassword(String password){
         this.password = password;
      }
+     public String getPassword(){
+        return password;
+     }
+     public void setCreateAt(Date creatAt){
+        this.creatAt=creatAt;
+     }
+     public Date getCreateAt(){
+        return creatAt;
+     } 
+
+     public StudentEntity(Integer id,String username, String email,String password,Date createAt)
 
 
 
