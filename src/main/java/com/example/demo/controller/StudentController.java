@@ -8,5 +8,7 @@ public class controller{
     @Autowired StudentService ser;
 
     @PostMapping("/post")
-    public StudentEntity senddd(@RequestBody StudentEntity)
+    public StudentEntity sendData(@RequestBody StudentEntity s){
+        return ser.postdata(s);
+    }
 }
