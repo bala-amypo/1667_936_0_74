@@ -1,8 +1,8 @@
-package.com.example.config;
+package com.example.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.servers.Server;
-import org.springframefork.context.annotation.Beam;
+import org.springframework.context.annotation.Beam;
 import org.springframework.context.annotation.Configuration;
 import java.util.List;
 
