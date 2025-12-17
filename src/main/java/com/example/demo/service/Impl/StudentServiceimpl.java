@@ -5,5 +5,8 @@ import com.example.demo.service.StudentService;
 
 @Service
 public class StudentServiceimpl implements StudentService{
-    StudentEntity postdata(StudentEntity stu);
+    @Autowired StudentRepository student;
+    public StudentEntity postdata(StudentEntity stu){
+
+    }
 }
