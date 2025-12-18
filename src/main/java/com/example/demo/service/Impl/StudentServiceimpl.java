@@ -33,4 +33,7 @@ public class StudentServiceimpl implements StudentService{
        return student.findById(id);
     
     }
+
+    @Override
+    public StudentEntity UpdateData(int id,StudentEntity stu)
 }
