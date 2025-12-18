@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
-
+import java.util.*;
 
 
 @RestController
@@ -21,7 +21,7 @@ public class StudentController{
     }
 
     @GetMapping("/get")
-    public list<StudentEntity> getdata(){
+    public List<StudentEntity> getdata(){
     return ser.getAllData();
     }
 }
