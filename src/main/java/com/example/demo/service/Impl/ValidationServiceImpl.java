@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.service.ValidationService;
 import com.example.demo.entity.ValidationEntity;
-import com.example.demo.service.ValidationRepository;
+import com.example.demo.repository.ValidationRepository;
 
 
 @Service
