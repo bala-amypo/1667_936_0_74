@@ -31,4 +31,8 @@ public class StudentController{
     public String DeleteAllData(@PathVariable int id){
         return ser.DeleteData(id);
     }
+    @GetMapping("/getid/{id}")
+    publicv StudentEntity getdataid(@PathVariable int id){
+    }
+
 }
