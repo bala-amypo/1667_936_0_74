@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import 
+import com.example.demo.entity.ValidationEntity;
 
 public interface ValidationService{
-
+      ValidationEntity postData(ValidationEntity user);
 }
