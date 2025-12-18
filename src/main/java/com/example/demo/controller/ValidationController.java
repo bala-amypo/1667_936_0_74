@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class ValidationController{
   @Autowired ValidationService validation;
     @PostMapping("/postval")
-    public ValidationEntity sendData(@RequestBody ValidationEntity val){
+    public ValidationEntity sendData(@Valid @RequestBody ValidationEntity val){
         return validation.postdata(val);
     }
 }
