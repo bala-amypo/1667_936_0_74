@@ -30,6 +30,7 @@ public class StudentServiceimpl implements StudentService{
 
     @Override
     public StudentEntity getData(int id){
-        student.
+       returt student.findById(id);
+    
     }
 }
