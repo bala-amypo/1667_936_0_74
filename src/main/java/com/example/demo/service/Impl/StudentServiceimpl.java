@@ -7,6 +7,8 @@ import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepository;
 
+import java.util.List;
+
 @Service
 public class StudentServiceimpl implements StudentService{
     @Autowired StudentRepository student;
@@ -18,6 +20,5 @@ public class StudentServiceimpl implements StudentService{
     @Override
     public List<StudentEntity> getAllData(){
         return student.findAll();
-
     }
 }
