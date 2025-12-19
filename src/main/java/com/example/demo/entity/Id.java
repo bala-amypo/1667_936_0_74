@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
+import com.example.demo.Student;
 import java.util.Date;
 
 import lombok.Data;
@@ -22,7 +22,8 @@ public class StudentEntity{
      private Integer id ;
      private String cardno;
 
-     @one
-     private int stu_id;
+     @OnetoOne
+     @JoinColumn(
+     private Student stu_id;
 
 }
