@@ -12,7 +12,7 @@ import com.example.demo.service.StudentRelationService;
 public class StudentRelationController{
      @Autowired StudentRelationService stamp;
 
-    @PostMapping("/post1")
+    @PostMapping("/post3")
     public Student sendData(@RequestBody Student sta){
         return stamp.toPost(sta);
     }

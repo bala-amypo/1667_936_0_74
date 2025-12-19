@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class IdentityServiceImpl implements IdentityService{
     @Autowired IdentityRepository ident;
     @Override
-    public Identity toPost(Student stu){
+    public Identity toPostAt(Student stu){
        return ident.save(stu);
     }
 }

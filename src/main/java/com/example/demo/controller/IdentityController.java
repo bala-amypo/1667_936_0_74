@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.demo.entity.TimeStamp;
-import com.example.demo.service.TimeStampService;
+import com.example.demo.entity.Identity;
+import com.example.demo.service.IdentityService;
 
 @RestController
-public class TimeStampController{
-     @Autowired TimeStampService stamp;
+public class IdentityController{
+     @Autowired IdentityService stamp;
 
-    @PostMapping("/post1")
-    public TimeStamp sendData(@RequestBody TimeStamp sta){
-        return stamp.postdata(sta);
+    @PostMapping("/post2")
+    public Identity sendData(@RequestBody Identity sta){
+        return stamp.toPostAt(sta);
     }
 } 
