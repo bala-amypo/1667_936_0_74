@@ -22,4 +22,9 @@ public class TimeStamp{
     private String email;
     private LocalDateTime createdAt;
     private LocalDateTime updated;
+
+    @PrePersist
+    public void onCreate(){
+        
+    }
 }
