@@ -10,10 +10,10 @@ import com.example.demo.service.TimeStampService;
 
 @RestController
 public class TimeStampController{
-     @Autowired TimeStampService ser;
+     @Autowired TimeStampService stamp;
 
     @PostMapping("/post1")
     public TimeStamp sendData(@RequestBody TimeStamp stu){
-        return ser.add(stu);
+        return stamp.add(stu);
     }
 } 

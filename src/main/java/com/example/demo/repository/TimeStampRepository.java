@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.demo.entity.TimeStamp;
 
 @Repository
-public interface TmieStampRepository extends JpaRepository<TimeStamp,Long>{
+public interface TimeStampRepository extends JpaRepository<TimeStamp,Long>{
 
 }
