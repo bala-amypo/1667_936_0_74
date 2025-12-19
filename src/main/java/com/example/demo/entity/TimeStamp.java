@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
 
 import java.time.LocalDateTime;
 
@@ -25,6 +26,6 @@ public class TimeStamp{
 
     @PrePersist
     public void onCreate(){
-        
+         
     }
 }
