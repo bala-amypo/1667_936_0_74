@@ -34,12 +34,14 @@ public class StudentServiceimpl implements StudentService{
     
     }
 
-    // @Override
-    // public StudentEntity UpdateData(int id,StudentEntity entity){
-    //     if (student.existsById(id)){
-    //         entity.setId(id);
-    //         return student.save(entity);
-    //     }
-    //     return null;
-    // }
+    @Override
+    public StudentEntity UpdateData(int id,StudentEntity entity){
+        if (student.existsById(id)){
+            entity.setId(id);
+            return student.save(entity);
+        }
+        return null;
+
+        
+    }
 }

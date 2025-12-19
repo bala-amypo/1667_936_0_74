@@ -14,6 +14,6 @@ public class TimeStampController{
 
     @PostMapping("/post1")
     public TimeStamp sendData(@RequestBody TimeStamp sta){
-        return stamp.add(sta);
+        return stamp.postdata(sta);
     }
 } 
