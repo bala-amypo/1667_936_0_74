@@ -9,7 +9,7 @@ import com.example.demo.repository.TimeStampRepository;
 
 @Service
 public class TimeStampServiceImpl implements TimeStampService{
-   @Autowired TimeStampRepository t
+   @Autowired TimeStampRepository t;
    @Override
    public TimeStamp add(TimeStamp s){
     return t.save(s);
