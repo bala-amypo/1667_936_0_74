@@ -1,3 +1,7 @@
 package com.example.demo.service;
 
-public interface 
+import com.example.demo.entity.Student;
+
+public interface StudentRelationService {
+        Student toPost(Student s);
+}
