@@ -23,7 +23,7 @@ public class Identity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
      private Integer id ;
-     private String cardno;
+     private int cardno;
 
      @OneToOne
      @JoinColumn(name = "stu_id")
