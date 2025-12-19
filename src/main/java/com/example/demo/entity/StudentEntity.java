@@ -7,7 +7,17 @@ import jakarta.persistence.Id;
 
 import java.util.Date;
 
-@Entity 
+import lombok.Data;
+import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+
+@Entity
+@Data
+@Getter
+@AllArgsConstructor
+@NOArgsConstructor
 public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
