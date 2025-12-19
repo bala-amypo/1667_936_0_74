@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import com.example.demo.Student;
+import com.example.demo.entity.Student;
 import java.util.Date;
 
 import jakarta.persistence.OneToOne;
@@ -19,13 +19,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentEntity{
+public class Student{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
      private Integer id ;
      private String cardno;
 
-     @OnetoOne
+     @OneToOne
      @JoinColumn(name = "stu_id")
      private Student stu_id;
 
