@@ -19,7 +19,7 @@ public class ValidationController{
     }
 
     @GetMapping("/getbyid/{id}")
-    public ValidationEntity getdataid(@PathVariable long id){
-        return validation.getData(id);
+    public ValidationEntity getdatabyid(@PathVariable long id){
+        return validation.GetData(id);
     }
 }
