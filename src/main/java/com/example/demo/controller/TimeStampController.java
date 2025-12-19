@@ -13,7 +13,7 @@ public class TimeStampController{
      @Autowired TimeStampService stamp;
 
     @PostMapping("/post1")
-    public TimeStamp sendData(@RequestBody TimeStamp stu){
-        return stamp.add(stu);
+    public TimeStamp sendData(@RequestBody TimeStamp sta){
+        return stamp.add(sta);
     }
 } 
