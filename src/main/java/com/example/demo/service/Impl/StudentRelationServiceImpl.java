@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StudentRelationServiceImpl implements StudentRelationService{
-    @Autowired StudentRepository student;
+    @Autowired StudentRelationRepository student;
     @Override
     public Student toPost(Student stu){
        return student.save(stu);
