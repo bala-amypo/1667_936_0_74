@@ -8,14 +8,12 @@ import jakarta.persistence.Id;
 import java.util.Date;
 
 import lombok.Data;
-import lombok.Getter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 
 @Entity
 @Data
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 public class StudentEntity{
