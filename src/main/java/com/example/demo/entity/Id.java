@@ -7,6 +7,9 @@ import jakarta.persistence.Id;
 import com.example.demo.Student;
 import java.util.Date;
 
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
+
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -23,7 +26,7 @@ public class StudentEntity{
      private String cardno;
 
      @OnetoOne
-     @JoinColumn(
+     @JoinColumn(name = "stu_id")
      private Student stu_id;
 
 }
