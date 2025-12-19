@@ -30,4 +30,8 @@ public class TimeStamp{
          this.createAt = now;
          this.updated = now; 
     }
+    @PreUpdate
+    public void onUpdate(){
+        this.updated = now;
+    }
 }
