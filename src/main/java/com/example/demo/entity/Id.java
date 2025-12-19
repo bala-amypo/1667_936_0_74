@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student{
+public class Id{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
      private Integer id ;
