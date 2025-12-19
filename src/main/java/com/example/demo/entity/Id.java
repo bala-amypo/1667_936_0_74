@@ -20,7 +20,9 @@ public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
      private Integer id ;
-     private int stu_id;
      private String cardno;
+
+     @one
+     private int stu_id;
 
 }
